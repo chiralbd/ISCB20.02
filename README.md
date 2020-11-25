@@ -1,12 +1,6 @@
-# ToolBox for Scientific Computing(ISCB1002)
-Day | Topic Name | Duration | Resources
-:-- | :--: | :--: | :--:
-Day-1 | Jupyter Notebook, Markdown, LaTeX | 1 Hour | [slide](#), [external](#) 
-Day-2 | RStudio, Rmarkdown, LaTeX | 1 Hour | [slide](#), [external](#) 
-Day-3 | Cloud Platforms for Python and R  |  1 Hour | [slide](#), [external](#) 
+# ISCB20.02--Scientific Typesetting
 
-
-## Programming Environment 
+## Programming Environment
 - [Jupyter Notebook](https://jupyter.org/)
 - [Microsoft Azure Notebook](https://notebooks.azure.com/)
 
@@ -22,5 +16,9 @@ Day-3 | Cloud Platforms for Python and R  |  1 Hour | [slide](#), [external](#)
 - http://www.latexbangla.com/use.html
 
 
-<hr> 
+## Instructors
+- [Jubayer Hossain, Lead Organizer & Instructor](https://jhossain.me/)
+- [Atik Shahriar Sammo, Instructor](#)
+
+<hr>
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
