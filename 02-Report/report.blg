@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: report.aux
+A level-1 auxiliary file: chapters/ch1.aux
+A level-1 auxiliary file: chapters/ch2.aux
+A level-1 auxiliary file: chapters/ch3.aux
+A level-1 auxiliary file: chapters/app1.aux
+The style file: plain.bst
+Database file #1: references.bib
+Warning--I didn't find a database entry for "Preciado2009"
+Warning--there's a number but no series in Finnegan2017
+Warning--empty publisher in Finnegan2017
+Warning--empty publisher in Prjibelski2018
+You've used 4 entries,
+            2118 wiz_defined-function locations,
+            532 strings with 4974 characters,
+and the built_in function-call counts, 1521 in all, are:
+= -- 131
+> -- 112
+< -- 2
++ -- 44
+- -- 40
+* -- 128
+:= -- 271
+add.period$ -- 13
+call.type$ -- 4
+change.case$ -- 30
+chr.to.int$ -- 0
+cite$ -- 7
+duplicate$ -- 47
+empty$ -- 94
+format.name$ -- 40
+if$ -- 296
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 7
+newline$ -- 23
+num.names$ -- 8
+pop$ -- 40
+preamble$ -- 1
+purify$ -- 28
+quote$ -- 0
+skip$ -- 26
+stack$ -- 0
+substring$ -- 45
+swap$ -- 6
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 10
+warning$ -- 3
+while$ -- 10
+width$ -- 5
+write$ -- 44
+(There were 4 warnings)

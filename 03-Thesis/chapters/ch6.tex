@@ -1,0 +1,37 @@
+%================ch3======================================
+\chapter{Analyzing Genomic Sequences}\label{ch:ch6}
+
+\section{Sequence Alignment} 
+\subsection{Classic alignment algorithms}
+Sequence alignment is the process of comparing and detecting similarities between biological sequences. What “similarities” are being detected will depend on the goals of the particular alignment process. Sequence alignment appears to be extremely useful in a number of bioinformatics applications \cite{seq2018}.
+
+
+
+\subsection{Comparative genomics}
+Nucleic sequence alignment algorithms are widely used in comparative genomics and phylogenetic studies. Comparative geno-
+mics studies similarities between two or more genomes at the level of large rearrangement events, such as inversions, duplications,
+translocations, large insertions and deletions. Since the comparative genomics usually does not take into account small structural
+variations and single nucleotide polymorphisms (SNPs), it requires a specific kind of alignment software. These methods typically
+detect synteny blocks long sequences shared between genomes being compared. Indeed, those sequences may have differences at
+the nucleotide level, but are still highly similar overall. The genomes are then represented as a sequence of synteny blocks and
+rearrangements are detected (Hannenhalli and Pevzner, 1999).
+Phylogenetic studies use various multiple sequence alignment methods to detect the level of sequence dissimilarity. The distance
+between compared sequences is used to construct phylogenetic trees, in which the length of the branches typically correspond to the
+distance between analyzed sequences. To construct a biologically meaningful and realistic tree, various clustering methods can be used
+as well as different sequences may be provided as input (Felsenstein, 1981; Kumar et al., 1994). Phylogenetic studies can be done using
+whole genomes and rearrangement events, genes and proteins sequences, or even SNPs for closely related organisms\cite{seq2018}.
+
+
+\section{Preprocessing Sequencing Data}
+Regardless of what technology, protocol or sample was used to generate sequencing data, quality control remains an integral part
+of every experiment. When performed correctly during the early stages of a project, quality control helps save time and thus,
+money. There have been many cases when false conclusions were made due to the poor quality of initial data, and, as a known
+saying states, “garbage in – garbage out”, meaning that great results do not come from low-quality data.
+FastQC is one of the most popular tools for basic quality control of different kinds of sequencing data (Andrews, 2010).
+FastQC does not require any additional data, such as a reference genome, and the QC is performed based on just a FASTQ file with
+sequences and corresponding quality values. Below we will take a look at several important statistics produced by FastQC, how to
+interpret them and what the differences between high- and low- quality data are.
+
+
+
+

@@ -1,0 +1,46 @@
+\begin{thebibliography}{1}
+
+\bibitem{seq2018}
+Anton I~Korobeynikov Andrey D~Prjibelski and Alla~L Lapidus.
+\newblock {\em Sequence Analysis}.
+\newblock Elsevier, 2018.
+
+\bibitem{compgenome}
+Nello Cristianini and Matthew~W. Hahn.
+\newblock {\em Introduction to Computational Genomics}.
+\newblock 1st edition, 2006.
+
+\bibitem{edwards2013beginner}
+David~J Edwards and Kathryn~E Holt.
+\newblock Beginner’s guide to comparative bacterial genome analysis using
+  next-generation sequence data.
+\newblock {\em Microbial informatics and experimentation}, 3(1):2, 2013.
+
+\bibitem{fraser2000microbial}
+Claire~M Fraser, Jonathan~A Eisen, and Steven~L Salzberg.
+\newblock Microbial genome sequencing.
+\newblock {\em Nature}, 406(6797):799--803, 2000.
+
+\bibitem{gutierrez2019genome}
+Ana Guti{\'e}rrez-Preciado, Philippe Deschamps, Tom Delmont, Claudia Chica,
+  Nathan~AM Chrismas, and Ricardo~Rodriguez de~la Vega.
+\newblock Genome sequence databases: Types of data and bioinformatic tools,
+  2019.
+
+\bibitem{lowe2015genomic}
+William~L Lowe and Timothy~E Reddy.
+\newblock Genomic approaches for understanding the genetics of complex disease.
+\newblock {\em Genome research}, 25(10):1432--1441, 2015.
+
+\bibitem{ray2003}
+Didier~Raoult Pierre-Edouard~Fournier.
+\newblock {\em Infectious Diseases}.
+\newblock 4th edition, 2017.
+
+\bibitem{ranganathan2018encyclopedia}
+Shoba Ranganathan, Kenta Nakai, and Christian Schonbach.
+\newblock {\em Encyclopedia of Bioinformatics and Computational Biology: ABC of
+  Bioinformatics}.
+\newblock Elsevier, 2018.
+
+\end{thebibliography}

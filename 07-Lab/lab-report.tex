@@ -1,0 +1,163 @@
+%===============Lab-report by C. Has=================================
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+\usepackage{graphicx}\graphicspath{{gfx/}}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{caption,subcaption}
+\usepackage[sort&compress, numbers]{natbib}
+\usepackage{hyperref}
+
+\captionsetup{font={small, stretch=1}, labelfont=bf}
+\renewcommand{\figurename}{Fig.}
+\setlength{\bibsep}{3pt}
+\newcommand{\Title}[1]{{\LARGE \centering \hrulefill\\ \textbf{#1}\\ \hrulefill}}
+%==================================================================
+
+\begin{document}
+	
+%title
+\doublespacing
+\begin{titlepage}	
+	\centering 	
+	{\LARGE \bfseries 
+		CL 610---Experimental Methods\\[2mm]
+		Experiment No. 12
+	}
+	\vspace{1\baselineskip}
+	
+	{\Large Thermo Gravimetry Differential Thermal Analysis}
+	\vspace{2.5\baselineskip}
+	
+	{\Large \bfseries 
+		TA:\\[1mm]	Teaching Assistant Name
+	}
+	\vspace{2.5\baselineskip}
+	
+	\includegraphics[width=0.35\linewidth]{logo}
+	\vspace{2.5\baselineskip}
+	
+	{\Large \bfseries \onehalfspacing
+		Group No. 1:\\[1mm] 
+		Name 1 (Roll no. ...)\\ 
+		Name 2  (Roll no. ...)\\ 
+		Name 3  (Roll no. ...)\\
+	}
+	\vspace{3\baselineskip}
+	
+	{\Large Write the Department Name at This Place}
+	\vspace{0.2\baselineskip}
+	
+	{\Large Write the University Name at This Place}
+	\vspace{3\baselineskip}
+	
+	{\Large \today}    	
+\end{titlepage}		
+
+\Title{Thermo Gravimetry Differential Thermal Analysis}	
+\onehalfspacing
+	
+\section{Objectives}
+To perform experiments with Thermo Gravimetric Analysis and(TGA) and Differential Scanning Calorimetric (DSC) analysis technique for obtaining information on mass and enthalpy changes of a sample undergoing physico-chemical changes on heating.
+
+\section{Introduction}
+A solid substance on heating can undergo physico-chemical changes e.g. decomposition, sintering, oxidation, fusion, melting or dehydration. Its change in mass due to
+liberation or absorption of matter and liberation or absorption of heat can be monitored using TGA-DSC analysis. Thermo gravimetric analysis (TGA) measures the change of mass of a sample in a controlled temperature programmed environment. Measuring the change in mass, it predicts the sample purity, decomposition, dehydration, oxidation and other such properties. The Differential Scanning Calorimetry (DSC) measures the temperature difference corresponding to physic-chemical changes and finds applications in identifying the phase change, find the enthalpy of transformations, etc.
+
+\section{Theory}
+Mass change occurring on a solid or liquid sample due to liberation or absorption of matter (mainly gaseous) is detected through Thermo gravimetric Analysis. The analysis of change of mass generally can be done through step heating and ramp heating. When step heating is done the sample is subjected to uniform temperature conditions, and the mass is measured as a function of increasing time. When ramp heating is done i.e. keeping heating rate constant the mass is measured as a function of increasing temperature. In most of the cases TGA is done with ramp heating so that the physico-chemical changes taking place for a specific sample can be monitored over a certain temperature range rather than focusing on a fixed temperature~\citep{wilburn1989introduction,price2000thermogravimetry}.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\linewidth]{DSC}
+	\caption{Differential Scanning Calorimetry. There are two pans. In one pan, the sample pan, you put your polymer sample. The other one is the reference pan.}
+	\label{fig:dsc}
+\end{figure}
+
+In Differential Scanning Calorimetry the difference in heat flow into the sample and a
+reference material is measured as a function of temperature or time, while the substance and reference material are subjected to same controlled temperature programme in a specified atmosphere. Here sample and the reference materials are heated by separate, individual heaters and the temperature difference is kept close to zero and the electrical power needed to maintain equal temperatures is measured. During the DSC experiment, the sample is heated over a range of temperature. At some point, the material starts to undergo a chemical or physical change that releases or absorbs heat. The ordinate value at any time or temperature is related to the difference in heat flow between a reference sample and the unknown. The integration of the area under the heat flow curve gives enthalpy change associated with the
+thermal event of interest. 
+
+\begin{enumerate}
+	\item Heat:
+	$$\Delta H = \int_{T_0}^{T_f}C_p\,\mathrm{dT}$$
+	\item Heat capacity:
+	$$C = Q/\Delta T$$
+	$$C_p = (\partial Q/\partial T)_p = (\partial H/\partial T)_p $$	
+	\item Thermal conductivity:
+	$$\lambda = aC_p\rho$$
+\end{enumerate}
+
+\section{Experimental procedure}
+
+\begin{enumerate}
+	\item Power unit, Furnace unit, Gas control unit, Water circulation unit were   
+	switched on in the respective order.
+	\item Pressure from the connected gas line $\mathrm{N_2/O_2/air}$ should be 
+	maintained around 1 $\mathrm{kgf/cm^2}$ and gas lines should be turned on.	      
+	\item Reference and analysis pan was cleaned manually and the weight was taken.
+	\item Furnace unit was opened using PUSH UP+ SAFETY buttons. Pan was placed
+	over the sensors using forks and their weights were noted down.
+	\item Baseline correction was performed in the same program which is used to
+	generate results.
+	\item The software STA409PC was opened.
+	\item Under Measurements CORRECTION was marked.
+	\item Entered Sample ID and name.
+	\item Tare sample crucible and reference crucible mass by clicking “weigh” button.
+	\item Kept the reference mass blank.
+	\item Under PURGE GAS Gas1 ($\mathrm{N_2}$) flow: 40 ml/min and Gas2    
+	($\mathrm{N_2}$) flow: 60 ml/min were set.
+	\item After pressing continue, calibration file were selected from source  
+	NEWDTA-CAL-N2 and sensitivity file from source SENSCAL-AL2O3-N2, ESV.
+	\item Multiple tabs got opened.
+	\item Under step conditions: The check box for STC, GAS 1 and GAS 2 were
+	selected.
+	\item Under Category Initial Temperature Conditions were set to 26 $^\circ$C.
+	\item ADD to END was pressed to close the TAB.
+	\item In side bar DYNAMIC was selected and Under Category End Temperature
+	and the Heating Rate (Acquisition rate in points/K and in points/min will be
+	taken automatically) were entered.
+	\item ADD to END was repressed to end the tab.
+	\item In the graph generated in the screen all of these got added.
+	\item In side bar FINAL was selected and the final temperature is automatically
+	taken 100C more than the end temperature by the instrument. This is the
+	emergency reset temperature.
+	\item In the specified path the file was saved and named. All the above   
+	settings were saved there as baseline correction.
+	\item COM1 WINDOW appeared soon after a minute.
+	\item Pressed initial condition on.
+	\item Gas flow in the rotameter was checked.
+	\item TARE tab was pressed.
+	\item Then START tab was pressed. Program got started and data acquisition started
+	to take place. 
+\end{enumerate}
+
+\section{Results}
+The mass and enthalpy changes of a sample undergoing physico-chemical changes on heating are:\ldots.
+
+\section{Conclusions}
+Summarize, in a paragraph or two, what you conclude from the results of your experiment and whether they are what you expected them to be. Compare the results with theoretical expectations and include percent error when appropriate. Don't use terms such as ``fairly close'' and ``pretty good;'' give explicit quantitative deviations from the expected result. Evaluate whether these deviations fall within your expected errors and state possible explanations for unusual deviations. Discuss and comment on the results and conclusions drawn, including the sources of the errors and the methods used for estimating them. Include brief answers to the specific questions asked in the lab instructions.
+
+
+\bibliographystyle{unsrtnat} 
+\bibliography{mybib}	
+	
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

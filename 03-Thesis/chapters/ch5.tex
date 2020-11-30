@@ -1,0 +1,32 @@
+%================ch3======================================
+\chapter{Genomic Data Analysis Methods}\label{ch:ch5}
+
+\section{Steps of Genomic Data Analysis} 
+Regardless of the analysis type, the data analysis has a common pattern. I will discuss this general pattern and how it applies to genomics problems. The data analysis steps typically include data collection, quality check and cleaning, processing, modeling, visualization and reporting. Although, one expects to go through these steps in a linear fashion, it is normal to go back and repeat the steps with different parameters or tools. In practice, data analysis requires going through the same steps over and over again in order to be able to do a combination of the following:
+\begin{itemize}
+	\item answering other related questions,
+	\item dealing with data quality issues that are later realized, and,) including new data sets to the analysis.
+\end{itemize}
+
+We will now go through a brief explanation of the steps within the context of genomic data analysis\cite{seq2018}.
+
+\subsection{Data collection}
+Data collection refers to any source, experiment or survey that provides data for the data analysis question you have. In genomics, data collection is done by high-throughput assays. One can also use publicly available data sets and specialized databases. How much data and what type of data you should collect depends on the question you are trying to answer and the technical and biological variability of the system you are studying.
+
+\subsection{Data quality check and cleaning} 
+In general, data analysis almost always deals with imperfect data. It is common to have missing values or measurements that are noisy. Data quality check and cleaning aims to identify any data quality issue and clean it from the dataset.
+
+High-throughput genomics data is produced by technologies that could embed technical biases into the data. If we were to give an example from sequencing, the sequenced reads do not have the same quality of bases called. Towards the ends of the reads, you could have bases that might be called incorrectly. Identifying those low quality bases and removing them will improve read mapping step.
+
+\subsection{Data processing}
+This step refers to processing the data to a format that is suitable for exploratory analysis and modeling. Often times, the data will not come in ready to analyze format. You may need to convert it to other formats by transforming data points (such as log transforming, normalizing etc), or subset the data set with some arbitrary or pre-defined condition. In terms of genomics, processing includes multiple steps. Following the sequencing analysis example above, processing will include aligning reads to the genome and quantification over genes or regions of interest. This is simply counting how many reads are covering your regions of interest. This quantity can give you ideas about how much a gene is expressed if your experimental protocol was RNA sequencing. This can be followed by some normalization to aid the next step.
+
+\subsection{Exploratory data analysis and modeling}  
+This phase usually takes in the processed or semi-processed data and applies machine-learning or statistical methods to explore the data. Typically, one needs to see relationship between variables measured, relationship between samples based on the variables measured. At this point, we might be looking to see if the samples group as expected by the experimental design, are there outliers or any other anomalies ? After this step you might want to do additional clean up or re-processing to deal with anomalies.
+
+Another related step is modeling. This generally refers to modeling your variable of interest based on other variables you measured. In the context of genomics, it could be that you are trying to predict disease status of the patients from expression of genes you measured from their tissue samples. Then your variable of interest is the disease status and . This is generally called predictive modeling and could be solved with regression based or any other machine-learning methods. This kind of approach is generally called “predictive modeling
+
+Statistical modeling would also be a part of this modeling step, this can cover predictive modeling as well where we use statistical methods such as linear regression. Other analyses such as hypothesis testing, where we have an expectation and we are trying to confirm that expectation is also related to statistical modeling. A good example of this in genomics is the differential gene expression analysis. This can be formulated as comparing two data sets, in this case expression values from condition A and condition B, with the expectation that condition A and condition B has similar expression values\cite{edwards2013beginner}.
+
+\subsection{Visualization and reporting} 
+Visualization is necessary for all the previous steps more or less. But in the final phase, we need final figures, tables and text that describes the outcome of your analysis. This will be your report. In genomics, we use common data visualization methods as well as specific visualization methods developed or popularized by genomic data analysis. 

@@ -1,0 +1,46 @@
+%================ch2======================================
+\chapter{Genomic Data and Databases}\label{ch:ch2}
+
+\section{What Are Genomic Data?}
+Genomic data refers to the genome and DNA data of an organism. They are used in bioinformatics for collecting, storing and processing the genomes of living things. Genomic data generally require a large amount of storage and purpose-built software to analyze.
+
+
+\section{Genomic Databases}
+Genomic databases allow for the storing, sharing and comparison of data across research studies, across data types, across individuals and across organisms. These are not a new invention even before the popularisation of the modern internet, ‘online’ databases have been available in order to share data on key organisms, such as Escherichia coli (Blattner et al., 1997) and Saccharomyces cerevisiae (Cherry et al., 2012). Recent advances in both data sharing technology and genome sequencing technology have created an explosion of databases, based around particular organisms, as has been historically the case, as well as around particular data types, such as transcriptional data or short-read sequencing data\cite{gutierrez2019genome}. 
+
+\section{Specific Organism Databases and the GMOD Project} 
+It is possibly unsurprising that with the evolution of sequencing technology and the power to sequence the genome of most any organism, given a reasonable amount of time and a reasonable amount of research effort, individual databases have developed around the genomes of specific organisms \cite{ranganathan2018encyclopedia}. In the past, this was mostly focussed around so-called ‘model’ organisms, or ones with large research bases, such as the mouse (Mus musculus) (Smith et al., 2018) and nematode (Caenorhabditis elegans) (Lee et al., 2018).
+
+In many cases, these were created by their own research communities, to suit their own needs, both in terms of how the data could be accessed, as well as what tools were provided to dissect the data. As efforts continued, there have been moves to create some consistency between databases and the tools they offer, meaning new organism databases are not required to ‘re-invent the wheel’ so to speak. In this regard, the Generic Model Organism Database (GMOD) project has served to provide a framework of tools and database methods to allow new databases to be created. The ‘users’ of the GMOD project are no longer limited to ‘model’ organisms, and now consist of a variety of different species and databases. The GMOD project also has its own genome browser associated with it, GBrowse (as discussed further below), which can be integrated into the participating databases as a web-based genome browser\cite{ranganathan2018encyclopedia}.
+
+
+\section{Human Genome Databases}
+The breadth and depth of human genome databases is vast, as is to be expected when an organism attempts to study itself, and
+analyse its own biological problems. These databases are often structured around various data sources, such as transcriptional data,as is the case for the H-Invitational database (H-InvDB) (4). Particular study types have also given rise to specific databases:genome-wide association study databases such as GWASCentral (5), and structural variant study databases such as dbVar (6) and DGV (7). As is the case with other organisms, there are also some databases which seek to be more comprehensive in scope: DNA element databases such as ENCODE (8), and the 1000 Genomes project database, now hosted as the International Genome Sample Resource (IGSR) (9). Databases for even more specific purposes exist, such as a wealth of databases on cancer genomic data, and will need to be searched for on a case-by-case basis depending on need.
+
+
+\section{The Main Three Databases}
+The main three databases are the National Center for Biotechnology Information (NCBI, \url{www.ncbi.nlm.nih.gov/}), the DNA Data Bank of Japan (DDBJ, \url{www.ddbj.nig.ac.jp/}) and the European Bioinformatics Institute (EBI, \url{www.ebi.ac.uk/}). In addition to offering complete microbial genome sequences with links to corresponding publications, these databases provide online tools for analyzing genome sequences. As of February 24, 2014, 12 272 genome sequences from 2897 bacterial species are available online (www.genomesonline.org/, https://gold.jgi.doe.gov). For some species, several genomes have  been sequenced. For 31 species, more than 50 genomes areavailable,including 16 species for which more than 100 genomes have been sequenced, the species holding the record being Escherichia coli, with 1261 currently available genomes. Sequenced genomes include the most significant human bacterial pathogens, covering all the phylogenetic domains of bacteria. In addition, more than 27 000 sequencing projects are ongoing (  \url{www.genomesonline.org/})\cite{ray2003}. Moreover, new sequencing technologies are making possible the sequencing of random community DNA and single cells of bacteria without the need for cloning or cultivation. 
+
+\section{Genome Browsers} 
+Data access and quality means very little if no meaning can be gained from it. In a field with as complex and abstract data as
+genomics, methods for data visualisation and analysis are of even greater importance. These must be able to cope with vast
+amounts of data, in the order of gigabytes or terabytes, as well as be able to connect these to tangible, biological meaning in the form of genes and products. Genome browsers seek to fill this need by providing a pre-existing software basis to visualise and analyse genomic data. Due to the sheer variety of researchers, purposes, expectations, and goals involved in the field, a number of genome browsers are available. For the new user, there are three broad-class, easy-to-pick-up databases for generic uses that stand out at present: the UCSC Genome Browser, managed by the University of California, Santa Cruz (Casper et al., 2018); GBrowse, managed by the GMOD project (see “Relevant Website section”); and Ensembl, managed by EMBL-EBI and the Wellcome Trust Sanger Institute (Zerbino et al., 2018). This section will consider each of these browsers in turn, and then give an overview of the
+more specific browsers which have been created based on these three forerunners\cite{ranganathan2018encyclopedia}.
+
+\subsection{UCSC Genome Browser}
+UCSC Genome Browser is the one of the most widely regarded broad-class browser, and has been integrated into a number of
+major databases. Its initial conception in 2000 was to visualise the first working draft of the Human Genome Project, but has been adapted in the following years to include a broad variety of organisms, and a vast suite of tools for visualising and analysing data.(\url{https://genome.ucsc.edu/})
+
+\subsection{Gbrowse} 
+Due to the ‘generic’ nature of the GMOD project (discussed above at 2.2), there was a need for a generic browser to accompany the suite of tools provided for new databases. GBrowse developed from this idea, and is therefore one of the more flexible genome browsers available. It has had a number of spin-off browsers created since its conception, tailored for particular purposes. As it is a part of the GMOD project, it is also available across many different databases\cite{ranganathan2018encyclopedia}. (\url{http://gmod.org/wiki/GBrowse})
+
+\subsection{Ensembl} 
+The Ensembl genome browser created by EMBL-EBI and the Wellcome Trust Sanger Institute is the native genome browser for the
+Ensembl Genomes databases. Due to the broad nature of the databases it is used for, it contains a broad variety of tools for visualisation and analysis across a variety of kingdoms of organisms.(\url{http://ensemblgenomes.org/})
+
+\subsection{Specialised Browsers}
+Browsers for more specialised purposes have been developed by particular groups, largely based on one of the primary three
+browsers. Due to its generic nature, the majority of ‘subsidiary’ browsers are based on GBrowse in particular. Lighter implementations have been created, such as JBrowse, as well as browsers more suited to collaboration and annotation, such as Apollo.
+
+

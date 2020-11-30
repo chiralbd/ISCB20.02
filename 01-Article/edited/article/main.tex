@@ -1,0 +1,101 @@
+%%%%%%%%%%%%%Article template by C Has%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[10pt, a4paper]{article}
+%
+%Important packages
+\usepackage[T1]{fontenc}
+\usepackage{times}
+
+\usepackage{amsmath, amssymb, amsfonts}   
+     
+\usepackage{graphicx}
+\usepackage{caption, subcaption}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[onehalfspacing]{setspace}
+
+\usepackage[round, sort & compress]{natbib}
+\usepackage{hyperref}
+
+%Title info...
+\title{\vspace{-15mm} Article and Manuscript Writing in \LaTeX}
+\author{Chandra Has\\ chandrahashbti@gmail.com}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. \\
+	
+	\noindent
+	\textbf{Keywords:} Article, \LaTeXe\ tutorial, manuscript, template
+\end{abstract}
+
+%\tableofcontents
+%\listoffigures
+%\listoftables
+
+\section{Introduction}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ILorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+\subsection{Title of first subsection}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+\subsubsection{Title of first subsubsection}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+\paragraph{Title of paragraph.}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged~\citep{Magnetism}.
+
+\section{Figure, table, equation}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged~\citep{Magnetism}. See figure~\ref{tab: table-1} and table~\ref{fig:logo}.
+
+\begin{figure}[tbp]
+	\centering
+	\includegraphics[width=0.35\linewidth]{gfx}
+	\caption{Lorem Ipsum is simply dummy text of the printing and typesetting industry.}
+	\label{fig:logo}
+\end{figure}
+ 
+\begin{table}[tbp]
+	\centering
+	\caption{Lorem Ipsum is simply dummy text of the printing and typesetting industry.}
+	\label{tab: table-1}
+  \begin{tabular}{p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}}
+	\hline 
+	A & B &  C &  D & E & F \\ 
+	\hline 
+	1 & 2 & 3 & 4 & 5 & 6 \\ 	
+	6 & 5 & 4 & 3 & 2 & 1 \\ 
+	3 & 2 & 1 & 2 & 3 & 4 \\ 
+	1 & 2 & 4 & 5 & 6 & 3 \\ 
+	4 & 3 & 2 & 1 & 5 & 6 \\ 
+	\hline 
+\end{tabular} 	
+\end{table}  
+
+\begin{equation}
+y = \ln x
+\end{equation}  
+  
+\appendix
+\section{First appendix}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchangedI~\citep{Davies1998}.
+\begin{equation}
+Y^2 = 4ax
+\end{equation}
+
+\bibliographystyle{plainnat}
+\bibliography{mybib}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+

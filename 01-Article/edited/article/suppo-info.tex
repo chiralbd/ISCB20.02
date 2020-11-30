@@ -1,0 +1,77 @@
+%%%%%%%%%%%%%Article template by C Has%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[10pt, a4paper]{article}
+%
+%Important packages
+\usepackage[T1]{fontenc}
+\usepackage{times}
+
+\usepackage{amsmath, amssymb, amsfonts}   
+     
+\usepackage{graphicx}
+\usepackage{caption, subcaption}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[singlespacing]{setspace}
+
+\usepackage[round, sort & compress]{natbib}
+\usepackage{hyperref}
+
+\renewcommand{\theequation}{S-\arabic{equation}}
+\renewcommand{\thefigure}{S-\arabic{figure}}
+\renewcommand{\thetable}{S-\arabic{table}}
+
+%Title info...
+\title{\vspace{-15mm} {\normalsize Supplementary Material for}\\
+	     Article and Paper Manuscript in \LaTeX}
+\author{Chandra Has\\ chandrahashbti@gmail.com}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ILorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+
+\begin{table}[h]
+	\centering
+	\caption{Lorem Ipsum is simply dummy text of the printing and typesetting industry.}
+	\label{tab: table-1}
+	\begin{tabular}{p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}}
+		\hline 
+		A & B &  C &  D & E & F \\ 
+		\hline 
+		1 & 2 & 3 & 4 & 5 & 6 \\ 	
+		6 & 5 & 4 & 3 & 2 & 1 \\ 		
+		1 & 2 & 4 & 5 & 6 & 3 \\ 	
+		\hline 
+	\end{tabular} 	
+\end{table}  
+
+\subsection{Title of first subsection}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged \cite{Magnetism}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.25\linewidth]{gfx}
+	\caption{Lorem Ipsum is simply dummy text of the printing and typesetting industry.}
+	\label{fig:logo}
+\end{figure}
+
+\begin{equation}
+Y^2 = 4ax
+\end{equation}
+
+\bibliographystyle{plainnat}
+\bibliography{suppbib}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,86 @@
+%%%%%%%%%%%%%Tutorial on IEEE template by C Has%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[conference]{IEEEtran}
+
+\usepackage{graphicx}
+
+\begin{document}
+
+\title{Manuscript Writing for IEEE Conference in \LaTeX}
+
+\author{%
+\IEEEauthorblockN{Michael Shell}
+\IEEEauthorblockA{School of Electrical and\\Computer Engineering\\
+Georgia Institute of Technology\\
+Atlanta, Georgia 30332--0250\\
+Email: http://www.michaelshell.org/contact.html}
+\and
+\IEEEauthorblockN{Homer Simpson}
+\IEEEauthorblockA{Twentieth Century Fox\\
+Springfield, USA\\
+Email: homer@thesimpsons.com}
+\and
+\IEEEauthorblockN{James Kirk\\ and Montgomery Scott}
+\IEEEauthorblockA{Starfleet Academy\\
+San Francisco, California 96678--2391\\
+Telephone: (800) 555--1212\\
+Fax: (888) 555--1212}
+}
+
+\maketitle
+
+\begin{abstract}
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+\end{abstract}
+
+\section{Introduction}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ILorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+\subsection{Title of first subsection}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+\subsubsection{Title of first subsubsection}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+\section{Figure, table, equation}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged~\cite{Magnetism}. See figure~\ref{tab: table-1} and table~\ref{fig:logo}.
+
+\begin{figure}[tbp]
+	\centering
+	\includegraphics[width=0.35\linewidth]{gfx}
+	\caption{Lorem Ipsum is simply dummy text of the printing and typesetting industry.}
+	\label{fig:logo}
+\end{figure}
+
+\begin{table}[tbp]
+	\centering
+	\caption{Lorem Ipsum is simply dummy text of the printing and typesetting industry.}
+	\label{tab: table-1}
+	\begin{tabular}{p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}}
+		\hline 
+		A & B &  C &  D & E & F \\ 
+		\hline 
+		1 & 2 & 3 & 4 & 5 & 6 \\ 	
+		6 & 5 & 4 & 3 & 2 & 1 \\ 
+		3 & 2 & 1 & 2 & 3 & 4 \\ 
+		1 & 2 & 4 & 5 & 6 & 3 \\ 
+		4 & 3 & 2 & 1 & 5 & 6 \\ 
+		\hline 
+	\end{tabular} 	
+\end{table}  
+
+\begin{equation}
+y = \ln x
+\end{equation}  
+
+\section{Conclusion}
+The conclusion goes here.
+
+\section*{Acknowledgment}
+The authors would like to thank...
+
+\bibliographystyle{IEEEtran}
+\bibliography{mybib}
+
+\end{document}
+
+

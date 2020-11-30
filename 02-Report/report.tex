@@ -1,0 +1,82 @@
+% Two side document:\documentclass[12pt,a4paper,twoside]{report}
+% Open right: \documentclass[12pt,a4paper,twoside,openright]{report}
+\documentclass[12pt,a4paper,twoside,openright]{report}
+\usepackage[T1]{fontenc} % Standard package for selecting font encodings
+\usepackage{mathptmx} % Use Times as default text font, and provide maths 
+%support
+\usepackage{amsmath,amssymb,amsfonts} % for math typesetting
+\usepackage{setspace} % Set space between lines
+\usepackage[top=1in,bottom=1in,left=3.2cm,right=2.6cm]{geometry} % page style 
+\usepackage{graphicx}\graphicspath{{img/}} % for images 
+\usepackage{subcaption} % for subfigures 
+\usepackage[sort&compress]{natbib} % for references 
+\renewcommand{\bibname}{References} % Rename Bibliography to References 
+\usepackage[hidelinks]{hyperref} % for hyperlinks 
+
+% Fancy Headers: Extensive control of page headers and footers in LaTeX
+\usepackage{fancyhdr}\pagestyle{fancy} 
+\fancyhf{}
+\fancyhead[RE]{\it{\nouppercase{\leftmark}}}
+\fancyhead[LO]{\it{\nouppercase{\rightmark}}}
+\fancyhead[LE,RO]{\thepage}
+\fancyfoot{}
+
+\usepackage{emptypage}
+\usepackage[nottoc]{tocbibind}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+% Title Page 
+\title{Report Writing using \LaTeX\\[1.5cm] \includegraphics[scale=0.6]{latex}}
+\author{Author Name}
+\date{Institute Name\\ Department Name\\[5mm] \today}
+
+\raggedbottom
+
+\begin{document}
+
+\pagestyle{empty}	
+
+\maketitle	
+\cleardoublepage
+
+\onehalfspacing
+\pagenumbering{roman}
+\pagestyle{plain}
+
+% Abstract 
+\begin{abstract}
+An abstract is a brief summary of a research article, thesis, review, conference proceeding, or any in-depth analysis of a particular subject and is often used to help the reader quickly ascertain the paper's purpose.
+\end{abstract}	
+
+% Clear Page
+\cleardoublepage
+% Set Page Style 
+\pagestyle{fancy}
+
+% Table of Contents, List of Figures, List of Tables 
+\tableofcontents
+\listoffigures
+\listoftables	
+
+\cleardoublepage
+\doublespacing
+\pagenumbering{arabic}	
+
+% Import Chapters
+\include{chapters/ch1}
+\include{chapters/ch2}	
+\include{chapters/ch3}	
+
+% Import Appendix 
+\appendix	
+\include{chapters/app1}	
+
+\singlespacing
+
+% Import BibTeX
+% Bibliographystyle: plain, abbrv, acm, 
+\bibliographystyle{plain}	
+\bibliography{references}
+	
+\end{document}

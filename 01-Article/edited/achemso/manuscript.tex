@@ -1,0 +1,167 @@
+%%%%%%%%%%%%%Manuscript tutorial by C Has%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[journal=jacsat,manuscript=article]{achemso}
+
+\usepackage{mathptmx}
+
+\title{Manuscript Writing for ACS in \LaTeX}
+
+\author{Author A}
+\author{Author B}
+\affiliation{Common address for Author A and Author B}
+
+\author{Author C}
+\email{author-c@email.com}
+%\phone{+91(0)22 25764237}
+%\fax{+91(0)22 25764237}
+\altaffiliation{Address for Author C}
+\keywords{American Chemical Society, \LaTeX}
+
+\begin{document}
+
+\begin{abstract}
+  This is an example document for the \textsf{achemso} document
+  class, intended for submissions to the American Chemical Society
+  for publication. The class is based on the standard \LaTeXe\
+  \textsf{report} file, and does not seek to reproduce the appearance
+  of a published paper.  This is an abstract for the \textsf{achemso} document class
+  demonstration document.  An abstract is only allowed for certain
+  manuscript types.  The selection of \texttt{journal} and
+  \texttt{manuscript} will determine if an abstract is valid.  If
+  not, the class will issue an appropriate error.
+\end{abstract}
+
+\section{Introduction}
+This is a paragraph of text to fill the introduction of the
+demonstration file.  The demonstration file attempts to show the
+modifications of the standard \LaTeX\ macros that are implemented by
+the \textsf{achemso} class.  These are mainly concerned with content,
+as opposed to appearance.
+
+\section{Results and discussion}
+
+\subsection{Outline}
+The document layout should follow the style of the journal concerned.
+Where appropriate, sections and subsections should be added in the
+normal way. If the class options are set correctly, warnings will be
+given if these should not be present.
+
+\subsection{References}
+The class makes various changes to the way that references are
+handled.  The class loads \textsf{natbib}, and also the
+appropriate bibliography style.  References can be made using
+the normal method; the citation should be placed before any
+punctuation, as the class will move it if using a superscript
+citation style
+\cite{Mena2000,Abernethy2003,Friedman-Hill2003,EuropeanCommission2008}.
+The use of \textsf{natbib} allows the use of the various citation
+commands of that package: \citeauthor{Abernethy2003} have shown
+something, in \citeyear{Cotton1999}, or as given by
+Ref.~\citenum{Mena2000}.  Long lists of authors will be
+automatically truncated in most article formats, but not in
+supplementary information or reviews \cite{Pople2003}. If you
+encounter problems with the citation macros, please check that
+your copy of \textsf{natbib} is up to date. The demonstration
+database file \texttt{achemso-demo.bib} shows how to complete
+entries correctly. Notice that ``\latin{et al.}'' is auto-formatted
+using the \texttt{\textbackslash latin} command.
+
+Multiple citations to be combined into a list can be given as
+a single citation.  This uses the \textsf{mciteplus} package
+\cite{Johnson1972,*Arduengo1992,*Eisenstein2005,*Arduengo1994}.
+Citations other than the first of the list should be indicated
+with a star. If the \textsf{mciteplus} package is not installed,
+the standard bibliography tools will still work but starred
+references will be ignored. Individual references can be referred
+to using \texttt{\textbackslash mciteSubRef}:
+``ref.~\mciteSubRef{Eisenstein2005}''.
+
+The class also handles notes to be added to the bibliography.  These
+should be given in place in the document \bibnote{This is a note.
+The text will be moved the the references section.  The title of the
+section will change to ``Notes and References''.}.  As with
+citations, the text should be placed before punctuation.  A note is
+also generated if a citation has an optional note.  This assumes that
+the whole work has already been cited: odd numbering will result if
+this is not the case \cite[p.~1]{Cotton1999}.
+
+\subsection{Floats}
+New float types are automatically set up by the class file.  The
+means graphics are included as follows (Scheme~\ref{sch:example}).  As
+illustrated, the float is ``here'' if possible.
+\begin{scheme}
+  Your scheme graphic would go here: \texttt{.eps} format\\
+  for \LaTeX\, or \texttt{.pdf} (or \texttt{.png}) for pdf\LaTeX\\
+  \textsc{ChemDraw} files are best saved as \texttt{.eps} files:\\
+  these can be scaled without loss of quality, and can be\\
+  converted to \texttt{.pdf} files easily using \texttt{eps2pdf}.\\
+  %\includegraphics{graphic}
+  \caption{An example scheme}
+  \label{sch:example}
+\end{scheme}
+
+\begin{figure}[tbp]
+	\centering
+	\includegraphics[width=0.35\linewidth]{gfx}
+	\caption{Lorem Ipsum is simply dummy text of the printing and typesetting industry.}
+	\label{fig:logo}
+\end{figure}
+
+\subsection{Math(s)}
+The \textsf{achemso} class does not load any particular additional
+support for mathematics.  If packages such as \textsf{amsmath} are
+required, they should be loaded in the preamble.  However,
+the basic \LaTeX\ math(s) input should work correctly without
+this.  Some inline material \( y = mx + c \) or $ 1 + 1 = 2 $
+followed by some display. \[ A = \pi r^2 \]
+
+It is possible to label equations in the usual way (Eq.~\ref{eqn:example}).
+\begin{equation}
+  \frac{\mathrm{d}}{\mathrm{d}x} \, r^2 = 2r \label{eqn:example}
+\end{equation}
+
+\section{Experimental}
+The usual experimental details should appear here.  This could
+include a table, which can be referenced as Table~\ref{tbl:example}.
+Notice that the caption is positioned at the top of the table.
+\begin{table}
+  \caption{An example table}
+  \label{tbl:example}
+  \begin{tabular}{ll}
+    \hline
+    Header one  & Header two  \\
+    \hline
+    Entry one   & Entry two   \\
+    Entry three & Entry four  \\
+    Entry five  & Entry five  \\
+    Entry seven & Entry eight \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{acknowledgement}
+Please use ``The authors thank \ldots'' rather than ``The
+authors would like to thank \ldots''.
+
+The author thanks Mats Dahlgren for version one of \textsf{achemso},
+and Donald Arseneau for the code taken from \textsf{cite} to move
+citations after punctuation. Many users have provided feedback on the
+class, which is reflected in all of the different demonstrations
+shown in this document.
+\end{acknowledgement}
+
+\begin{suppinfo}
+A listing of the contents of each file supplied as Supporting Information
+should be included. For instructions on what should be included in the
+Supporting Information as well as how to prepare this material for
+publications, refer to the journal's Instructions for Authors.
+
+The following files are available free of charge.
+\begin{itemize}
+  \item Filename: brief description
+  \item Filename: brief description
+\end{itemize}
+\end{suppinfo}
+
+\bibliography{achemso-bib}
+
+\end{document}

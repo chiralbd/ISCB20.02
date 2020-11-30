@@ -1,0 +1,134 @@
+\documentclass[12pt,a4paper]{report} 
+%=========================Preamble============================
+\usepackage[T1]{fontenc} % font encoding
+\usepackage{mathptmx}    % adobe times roman font
+\usepackage{amsmath,amssymb,amsfonts} %ams packages for math
+\usepackage{setspace} % for line spacing
+\usepackage[top=1in,bottom=1in,left=3.2cm,right=2.6cm]{geometry} %for margins
+\usepackage{graphicx}\graphicspath{{images/}} %to add images
+\usepackage{subcaption} %for subfig.
+\usepackage[intoc,refpage]{nomencl}\makenomenclature %for list of symbols
+\usepackage[sort&compress]{natbib} %format bibliography
+\renewcommand{\bibname}{Refrences}
+
+\renewcommand{\nomname}{List of Symbols}
+\renewcommand{\pagedeclaration}[1]{\dotfill\hyperpage{#1}}
+
+\usepackage{emptypage} %removes fancy headers from blank page
+\usepackage[nottoc]{tocbibind} %adds ref and ind in toc
+\usepackage[toc,page]{appendix} %creats a new page for appendices title
+\usepackage{quotchap} %for fancy chap style
+
+\usepackage[hidelinks]{hyperref} %creats the links
+\usepackage{color}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+     citecolor = blue
+}
+
+\usepackage{fancyhdr}\pagestyle{fancy} %for fancy headers and footers
+\fancyhf{}
+\fancyhead[RE]{\it{\nouppercase{\leftmark}}}
+\fancyhead[LO]{\it{\nouppercase{\rightmark}}}
+\fancyhead[LE,RO]{\thepage}
+\fancyfoot{}
+\usepackage{blindtext}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\raggedbottom
+
+\includeonly{pages/title,%
+	pages/copyright,%
+	pages/dedication,%
+    Ppages/certificate,%
+    pages/acknowledgements,%
+    pages/declaration,%
+    pages/abstract,%
+}
+%=======================================================================
+\begin{document}
+
+%========================preliminary pages============================
+\pagenumbering{roman}
+\pagestyle{plain}
+\onehalfspacing
+%-----------------
+
+\include{pages/title}
+\include{pages/copyright}
+\include{pages/dedication}
+\include{pages/certificate}
+\include{pages/declaration}
+\include{pages/acknowledgements}
+\include{pages/abstract}
+
+%-----
+\pagestyle{fancy}
+%----
+\tableofcontents
+\listoffigures
+\listoftables
+
+\printnomenclature[5cm]
+\cleardoublepage
+
+%==========================main pages=================================
+\pagenumbering{arabic}
+\pagestyle{fancy}
+\doublespacing
+%-----------------------
+
+\input{chapters/ch1}
+\input{chapters/ch2} 
+\input{chapters/ch3}
+\input{chapters/ch4}
+\input{chapters/ch5} 
+\input{chapters/ch6} 
+\onehalfspacing
+\appendix
+\begin{appendices}
+\include{pages/app1}	
+\include{Main-pages/app2}	
+\include{Main-pages/app3}		
+\end{appendices}
+
+\bibliographystyle{plain}	
+\bibliography{references}
+
+\input{pages/credits} 
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

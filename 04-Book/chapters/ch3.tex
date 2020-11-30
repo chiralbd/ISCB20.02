@@ -1,0 +1,21 @@
+%%%
+\chapter{Mathematics}
+
+One of the greatest motivating forces for Donald Knuth when he began developing the original TeX system was to create something that allowed simple construction of mathematical formulae\index{formulae}, while looking professional when printed. The fact that he succeeded was most probably why TeX (and later on, LaTeX) became so popular within the scientific community. Typesetting mathematics is one of LaTeX's greatest strengths. It is also a large topic due to the existence of so much mathematical notation.
+
+If your document requires only a few simple mathematical formulas, plain LaTeX has most of the tools that you will need. If you are writing a scientific document that contains numerous complicated formulas, the amsmath package\index{package} introduces several new commands that are more powerful and flexible than the ones provided by basic LaTeX. The mathtools package fixes some amsmath quirks and adds some useful settings, symbols, and environments to amsmath.
+
+$$M = \begin{bmatrix}
+\frac{5}{6} & \frac{1}{6} & 0           \\[0.3em]
+\frac{5}{6} & 0           & \frac{1}{6} \\[0.3em]
+0           & \frac{5}{6} & \frac{1}{6}
+\end{bmatrix}$$
+
+\begin{equation}
+x = a_0 + \cfrac{1}{a_1 
+	+ \cfrac{1}{a_2 
+		+ \cfrac{1}{a_3 + \cfrac{1}{a_4} } } }
+\end{equation}
+
+
+
