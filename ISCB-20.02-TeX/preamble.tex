@@ -1,0 +1,51 @@
+\documentclass[10pt,dvipsnames, aspectratio=169]{beamer}
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage[]{verbatim}\usepackage[]{}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+\usepackage[misc]{ifsym}
+\usepackage{wasysym}
+\usepackage{listings}
+\usepackage{xspace}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage[T1]{fontenc}
+
+% Table
+\usepackage{array}
+\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
+\newcolumntype{C}[1]{>{\PreserveBackslash\centering}p{#1}}
+\newcolumntype{R}[1]{>{\PreserveBackslash\raggedleft}p{#1}}
+\newcolumntype{L}[1]{>{\PreserveBackslash\raggedright}p{#1}}
+
+
+\usepackage{ragged2e}\justifying % for justify content % Customize 
+\setlength{\parskip}{5pt} % vertical spacing between 2 paragraphs
+\setbeamersize{text margin left=12mm, text margin right=12mm} 
+\setbeamertemplate{frametitle}[default][left, leftskip=8mm]
+%\usepackage[hidelink]{hyperref}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+% WARNING: Don't Touch,if you are not compfortable! 
+\addtobeamertemplate{frametitle}{}{
+%\begin{tikzpicture}[remember picture,overlay]
+%\node[anchor=north east,yshift=2pt,xshift=-65pt] at (current page.north east) 
+%{\includegraphics[height=.75cm]{img/elixir-portugal-white}};
+%\node[anchor=north east,yshift=4pt] at (current page.north east) 
+%{\includegraphics[height=1cm]{img/hdro}};
+%\end{tikzpicture}
+}
+
+% Title Page of Presentation 
+% WARNING: Don't change logo, just write your details 
+\title{ISCB20.01 -- Introduction to LINUX for Biologists}
+\date{\today}
+\author{Md. Jubayer Hossain \\ 
+        https://jhossain.me/}
+\institute{Lead Organizer, Introduction to Scientific Computing for Biologists 
+\\ Founder, Health Data Research Organization}
+\titlegraphic{\vspace{4cm}\hfill\includegraphics[height=1cm]{img/hdro2}}
